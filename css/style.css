@@ -15,14 +15,51 @@ body {
   color: var(--description-color);
 }
 
+/* reset start */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
+
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .link {
   text-decoration: none;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* reset end */
+
 /* header */
+
+.header-container{
+  display: flex;
+  align-items: center;
+}
+
+.container{
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .logo {
   font-family: "Raleway", sans-serif;
@@ -33,6 +70,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--accent-color);
   text-decoration: none;
+  margin-right: 93px;
 }
 
 .logo-header {
@@ -56,6 +94,21 @@ body {
   color: var(--accent-color);
 }
 
+
+.nav-list{
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.header-list {
+  margin-left: auto;
+  display: flex;
+  gap: 50px;
+}
+
 .header-mail {
   font-weight: 500;
   font-size: 14px;
@@ -75,9 +128,14 @@ body {
 
 .hero-section {
   background-color: var(--background-color-black);
+
 }
 
 .hero-title {
+  margin: 0 auto;
+  padding-top: 200px;
+  padding-bottom: 30px;
+  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
@@ -88,6 +146,10 @@ body {
 }
 
 .btn-hero {
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 32px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -98,7 +160,12 @@ body {
   background: var(--accent-color);
   cursor: pointer;
   border: none;
+  
 }
+.btn{
+  padding-bottom: 200px;
+}
+
 .btn-hero:hover,
 .btn-hero:focus{
   background-color: var(--btn-hover-focus-color);
@@ -118,7 +185,16 @@ body {
   margin: -1px;
 }
 
+.benefits-list{
+  display: flex;
+}
+.benefits{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .benefits-title {
+  padding-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -138,6 +214,7 @@ body {
 
 .works-title,
 .staf-title {
+  padding-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -146,17 +223,42 @@ body {
   text-align: center;
 
 }
+.list-works{
+  display: flex;
+  padding-bottom: 94px;
+}
+
+.works-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 
 /* staff */
 
-.staff {
+.staff-list{
+  display: flex;
+}
+
+.staff-wrapper{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.staff {;
   background-color: var(--background-color-grey);
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .staff-card {
   background-color: var(--main-title-color);
 }
+.staff-card:not(:last-child) {
+  margin-right: 30px;
+}
+
 .staff-name {
+  padding-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -178,6 +280,18 @@ body {
 }
 .logo-footer {
   color: var(--main-title-color);
+
+}
+.logo-wrapper{
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.list-wrapper{
+  padding-bottom: 60px;
+}
+.list-footer:not(:last-child){
+  padding-bottom:9px
 }
 
 .footer-mail,
@@ -200,7 +314,18 @@ body {
 
 /* portfolio */
 
+.btn-works-wrapper{
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+
+
 .btn-works {
+
+  padding: 6px 22px;
   font-family: inherit;
   font-style: normal;
   font-weight: 500;
@@ -217,6 +342,11 @@ body {
 .btn-works:focus {
   background-color: var(--accent-color);
   color: var(--main-title-color);
+}
+
+.card-set{
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .works-card {
