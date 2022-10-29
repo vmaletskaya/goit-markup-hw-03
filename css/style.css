@@ -86,6 +86,9 @@ img {
 }
 
 .nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -104,8 +107,6 @@ img {
 
 
 .nav-list{
-  padding-top: 32px;
-  padding-bottom: 32px;
   display: flex;
   gap: 50px;
   align-items: center;
@@ -136,13 +137,13 @@ img {
 
 .hero-section {
   background-color: var(--background-color-black);
-
+ padding-top: 200px;
+ padding-bottom: 200px;
 }
 
 .hero-title {
   margin: 0 auto;
-  padding-top: 200px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   width: 696px;
   font-weight: 900;
   font-size: 44px;
@@ -170,9 +171,6 @@ img {
   border: none;
   
 }
-.btn{
-  padding-bottom: 200px;
-}
 
 .btn-hero:hover,
 .btn-hero:focus{
@@ -192,12 +190,22 @@ img {
   clip-path: inset(50%);
   margin: -1px;
 }
+.benefits-section{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.benefits-card{
+  flex-basis: calc(100% / 4 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+}
 
 .benefits-list{
   display: flex;
-}
-.benefits{
-  padding-top: 94px;
+  margin-left:calc(-1 * var(--card-set-gap));
+} 
+
+.works-section{
   padding-bottom: 94px;
 }
 
@@ -233,43 +241,43 @@ img {
 }
 .list-works{
   display: flex;
-  padding-bottom: 94px;
+  margin-left: calc(-1 * var(--card-set-gap));
+ 
 }
 
 .works-item{
-  flex-basis: calc(100 / 3 - var(--card-set-gap));
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
 }
 
-.works-item:not(:last-child) {
-  margin-right: 30px;
-}
 
 
 /* staff */
 
 .staff-list{
   display: flex;
+  margin-left: calc(-1 * var(--card-set-gap));
 }
 
 .staff-wrapper{
   padding-top: 30px;
   padding-bottom: 30px;
 }
+.staff-section{
+  padding-bottom: 94px;
+    padding-top: 94px;
+}
 
 .staff {
   background-color: var(--background-color-grey);
-  padding-bottom: 94px;
-  padding-top: 94px;
+
 }
 
 .staff-card {
-  flex-basis: calc(100 / 3 - var(--card-set-gap));
+  flex-basis: calc(100 % / 4 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
   background-color: var(--main-title-color);
 }
-.staff-card:not(:last-child) {
-  margin-right: 30px;
-}
-
 .staff-name {
   padding-bottom: 10px;
   font-weight: 500;
@@ -288,23 +296,22 @@ img {
 }
 
 /* footer */
+
 .footer {
+  padding-bottom: 60px;
+  padding-top: 60px;
   background-color: var(--background-color-black);
 }
 .logo-footer {
   color: var(--main-title-color);
+  }
 
-}
-.logo-wrapper{
-  padding-top: 60px;
-  padding-bottom: 20px;
-}
+ .address-wrapper{
+  margin-top: 20px;
+ }
 
-.list-wrapper{
-  padding-bottom: 60px;
-}
 .list-footer:not(:last-child){
-  padding-bottom:9px
+  margin-bottom:9px
 }
 
 .footer-mail,
