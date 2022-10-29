@@ -8,6 +8,7 @@
   --background-color-black: #2f303a;
   --footer-contact-color: rgba(255, 255, 255, 0.6);
   --btn-hover-focus-color:#188CE8;
+  --card-set-gap:30px
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -47,6 +48,13 @@ img {
 /* reset end */
 
 /* header */
+
+.header{
+  border: 1px solid #ECECEC;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+}
 
 .header-container{
   display: flex;
@@ -228,6 +236,10 @@ img {
   padding-bottom: 94px;
 }
 
+.works-item{
+  flex-basis: calc(100 / 3 - var(--card-set-gap));
+}
+
 .works-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -244,13 +256,14 @@ img {
   padding-bottom: 30px;
 }
 
-.staff {;
+.staff {
   background-color: var(--background-color-grey);
   padding-bottom: 94px;
   padding-top: 94px;
 }
 
 .staff-card {
+  flex-basis: calc(100 / 3 - var(--card-set-gap));
   background-color: var(--main-title-color);
 }
 .staff-card:not(:last-child) {
@@ -324,7 +337,7 @@ img {
 
 
 .btn-works {
-
+  border-radius: 4px;
   padding: 6px 22px;
   font-family: inherit;
   font-style: normal;
@@ -347,11 +360,28 @@ img {
 .card-set{
   display: flex;
   flex-wrap: wrap;
+  margin-top:var(-1 * var(--card-set-gap)) ;
+  margin-left:var(-1 * var(--card-set-gap)) ;
+  margin-bottom: 94px;
+  
 }
 
+
 .works-card {
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
   background-color: var(--main-title-color);
+  
 }
+
+.card-wrapper{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 1px solid #EEEEEE;
+  border-top: none;
+}
+
 .job-title {
   font-weight: 700;
   font-size: 18px;
