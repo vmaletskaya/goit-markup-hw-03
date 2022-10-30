@@ -178,6 +178,7 @@ img {
 }
 
 /* benefins */
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -296,6 +297,11 @@ img {
 }
 
 /* footer */
+
+.link-footer:hover,
+.link-footer:focus{
+  color: var(--accent-color);
+}
 
 .footer {
   padding-bottom: 60px;
